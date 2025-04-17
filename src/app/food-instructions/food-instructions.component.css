@@ -1,0 +1,45 @@
+.main__recipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.main__recipe__image {
+  width: 600px;
+  height: 600px;
+  margin-left: -10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2196078431);
+  border-radius: 3px;
+}
+
+.main__recipe__instructions {
+  width: 600px;
+  height: 700px;
+  min-height: 650px;
+  background-color: #e8e4e4;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2196078431);
+  padding: 20px;
+  overflow: scroll;
+}
+
+.main__recipe__instructions__recipe__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__recipe__step-container {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.355);
+  align-items: center;
+}
+
+.main__recipe__step-number {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=food-instructions.component.css.map */

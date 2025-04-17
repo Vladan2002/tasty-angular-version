@@ -1,0 +1,10 @@
+<div class="card"  (click)="goToDetail()" style="cursor: pointer;">
+  <img [src]="recipe.thumbnail_url" class="img" alt="{{ recipe.name }}">
+  <div class="text">
+    <h3>{{ recipe.name }}</h3>
+  </div>
+  <div class="wrap">
+    <p class="second">{{ recipe.topics[0].name }}</p>
+    <p *ngIf="recipe.total_time_minutes > 0" class="time">{{ recipe.total_time_minutes }} min</p>
+  </div>
+</div>

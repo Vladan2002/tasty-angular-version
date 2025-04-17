@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+.card {
+  width: 275px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1607843137);
+  margin-bottom: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.text {
+  margin: 0 15px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.second {
+  background-color: #236823;
+  padding: 4px 6px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30px;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.time {
+  color: #065259;
+}
+
+.img {
+  width: 100%;
+  min-height: 300px !important;
+}
+
+.card {
+  width: 275px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1607843137);
+  margin-bottom: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+/*# sourceMappingURL=kartica.component.css.map */

@@ -1,0 +1,16 @@
+.main {
+  flex-direction: column;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=more-info.component.css.map */

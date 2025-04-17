@@ -1,0 +1,16 @@
+.navbar {
+  width: calc(100% - 40px);
+  background-color: #236823;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.0705882353);
+  padding: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=navbar.component.css.map */

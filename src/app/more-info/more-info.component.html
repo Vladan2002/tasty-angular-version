@@ -1,0 +1,14 @@
+<div class="main" *ngIf="recipe;else loader">
+
+<app-food-specs [recipe]="recipe"></app-food-specs>
+<app-food-instructions [recipe]="recipe"></app-food-instructions>
+
+
+</div>
+<ng-template #loader>
+  <div class="loader">
+    <img [ngSrc]="loaderSource" width="300" height="300" alt="Loader">
+  </div>
+</ng-template>
+
+
