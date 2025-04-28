@@ -1,13 +1,18 @@
-// src/app/app.routes.ts
 import { Routes } from '@angular/router';
-import {AboutComponent} from './about/about.component';
-import {PocetnaComponent} from './pocetna/pocetna.component';
-import {MoreInfoComponent} from './more-info/more-info.component';
-
 
 export const routes: Routes = [
-  { path: '', component: PocetnaComponent },
-  { path: 'about', component:AboutComponent },
-  { path: 'recipe/:id', component: MoreInfoComponent },
-  { path: '**', redirectTo: '' }
+  {
+    path: 'index',
+    loadChildren: () => import('./pages/index/index.module').then(m => m.IndexModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
+  },
+  {
+    path: 'more-info',
+    loadChildren: () => import('./pages/more-info/more-info.module').then(m => m.MoreInfoModule)
+  },
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  { path: '**', redirectTo: '/index' }
 ];

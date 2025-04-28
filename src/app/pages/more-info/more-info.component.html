@@ -1,0 +1,18 @@
+<div *ngIf="isLoading">
+  <div class="loader">
+    <img [src]="loaderSource" alt="Loader" class="loader__img" />
+  </div>
+</div>
+
+<div *ngIf="!isLoading">
+  <div *ngIf="instruction">
+    <div class="main">
+      <app-food-specs [recipe]="nutrition"></app-food-specs>
+      <app-food-instructions [instructions]="instruction"></app-food-instructions>
+    </div>
+  </div>
+
+  <div *ngIf="!instruction">
+    <p>Recipe not found.</p>
+  </div>
+</div>

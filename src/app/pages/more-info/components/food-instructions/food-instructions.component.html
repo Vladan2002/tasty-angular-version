@@ -1,0 +1,21 @@
+<div class="main__recipe">
+  <div class="main__recipe__instructions">
+    <h3 class="main__recipe__title">INSTRUCTIONS</h3>
+
+    <div
+      class="main__recipe__step-container"
+      *ngFor="let instruction of instructions?.instructions;"
+    >
+      <p class="main__recipe__step-number">{{instruction.step}}</p>
+      <p class="main__recipe__step-text">{{ instruction.display_text }}</p>
+    </div>
+  </div>
+
+  <div class="main__recipe__image-container">
+    <img
+      [src]="instructions?.thumbnail_url"
+      alt="Finished dish"
+      class="main__recipe__image"
+    />
+  </div>
+</div>
